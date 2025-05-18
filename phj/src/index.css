@@ -1,4 +1,4 @@
-/* Animated noise effect */
+
 body::before {
   content: "";
   position: fixed;

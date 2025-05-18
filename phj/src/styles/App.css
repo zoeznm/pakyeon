@@ -1,0 +1,28 @@
+/* 전체 페이지 기본 스타일 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow:visible;
+}
+
+#smooth-wrapper {
+  min-height: calc(100vh * 5); 
+}
+
+#smooth-content {
+  min-height: 100vh;
+}
+
+/* 모바일 대응 예시 */
+@media (max-width: 768px) {
+  .poster {
+    min-height: 80vh;
+  }
+  .poster img {
+    max-width: 90%;
+  }
+  .poster h2 {
+    font-size: 1.5rem;
+  }
+}

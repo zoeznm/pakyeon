@@ -1,0 +1,23 @@
+.loader-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 9999;
+  overflow: hidden;
+}
+.loader-center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading span {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+  animation: blur 1.5s calc(var(--i) / 5 * 1s) alternate infinite;
+}
+@keyframes blur {
+  to { filter: blur(5px); }
+}
