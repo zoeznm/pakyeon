@@ -1,0 +1,34 @@
+/* Animated noise effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  /* 투명 노이즈 이미지로 배경 패턴을 깔고 */
+  background: transparent
+  url("./assets/posters/noise.png")repeat 0 0;
+  background-size: 300px 300px;
+  /* 키프레임 애니메이션으로 살짝씩 이동시켜 계속 움직이게 함 */
+  animation: noise-animation 0.3s steps(5) infinite;
+  opacity: 0.9;
+  will-change: transform;
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* 노이즈를 랜덤하게 흔들리듯 움직이는 키프레임 */
+@keyframes noise-animation {
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(-2%, -3%); }
+  20%  { transform: translate(-4%,  2%); }
+  30%  { transform: translate( 2%, -4%); }
+  40%  { transform: translate(-2%,  5%); }
+  50%  { transform: translate(-4%,  2%); }
+  60%  { transform: translate( 3%,  0%); }
+  70%  { transform: translate( 0%,  3%); }
+  80%  { transform: translate(-3%,  0%); }
+  90%  { transform: translate( 2%,  2%); }
+  100% { transform: translate( 1%,  0%); }
+}
