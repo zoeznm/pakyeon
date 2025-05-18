@@ -1,3 +1,4 @@
+
 .loader-screen {
   position: fixed;
   top: 0; left: 0;
@@ -7,17 +8,23 @@
   z-index: 9999;
   overflow: hidden;
 }
-.loader-center {
+.loader-count {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-}
-.loading span {
-  display: inline-block;
-  font-size: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 3rem;
   color: #fff;
-  animation: blur 1.5s calc(var(--i) / 5 * 1s) alternate infinite;
+  font-family: 'TRYGrtsk', sans-serif !important;
 }
-@keyframes blur {
-  to { filter: blur(5px); }
+@font-face {
+  font-family: 'TRYGrtsk';
+  src: url('/fonts/trygrtsk-semiboldmega-bf6426552430fe5-webfont.woff2') format('woff2'),
+  url('/fonts/trygrtsk-semiboldmega-bf6426552430fe5-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'TRYGrtsk', sans-serif !important;
 }

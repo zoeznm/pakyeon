@@ -1,35 +1,45 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import '../styles/LoaderScreen.css';
 import gsap from 'gsap';
 
 export default function LoaderScreen() {
+  const [progress, setProgress] = useState(0);
   const screenRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // LOADING 텍스트 블러 애니메이션은 CSS에서 자동 실행
-    // 로딩 후 화면 축소(hollow) 효과
-    const screen = screenRef.current;
-    if (!screen) return;
-    // 3초 후 로더 제거
-    const tl = gsap.timeline({ delay: 3 });
-    tl.to(screen, {
-      height: 0,
-      duration: 0.5,
-      ease: 'power2.inOut'
-    });
+    // 0부터 100까지 3초 동안 카운트업
+    const duration = 3; // seconds
+    const steps = 100;
+    let start: number | null = null;
+
+    const animate = (timestamp: number) => {
+      if (!start) start = timestamp;
+      const elapsed = (timestamp - start) / 1000;
+      const pct = Math.min(elapsed / duration, 1);
+      const value = Math.floor(pct * steps);
+      setProgress(value);
+
+      if (pct < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        // 완료 시 로더 축소
+        gsap.to(screenRef.current, {
+          height: 0,
+          duration: 0.5,
+          ease: 'power2.inOut',
+        });
+      }
+    };
+
+    requestAnimationFrame(animate);
   }, []);
+
+  // progress를 세 자리 숫자(000)로 표시
+  const label = progress.toString().padStart(3, '0');
 
   return (
     <div className="loader-screen" ref={screenRef}>
-      <div className="loader-center">
-        <div className="loading">
-          {Array.from({ length: 7 }).map((_, i) => (
-            <span key={i} style={{ '--i': i } as React.CSSProperties}>
-              {'pakyeon'[i]}
-            </span>
-          ))}
-        </div>
-      </div>
+      <div className="loader-count">{label}</div>
     </div>
   );
 }
