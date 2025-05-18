@@ -32,26 +32,4 @@ body::before {
   90%  { transform: translate( 2%,  2%); }
   100% { transform: translate( 1%,  0%); }
 }
-@font-face {
-  font-family: 'TRYGrtsk';
-  src: url('/fonts/trygrtsk-semiboldmega-bf6426552430fe5-webfont.woff2') format('woff2'),
-  url('/fonts/trygrtsk-semiboldmega-bf6426552430fe5-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-body {
-  font-family: 'TRYGrtsk', sans-serif;
-}
-@font-face {
-  font-family: 'Hanja';
-  src: url('/fonts/hanja.woff2') format('woff2'),
-  url('/fonts/hanja.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-body {
-  font-family: 'Hanja', sans-serif;
-}
 

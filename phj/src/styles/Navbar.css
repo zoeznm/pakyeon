@@ -1,4 +1,14 @@
 /* Navbar 전체 스타일 */
+/* 한자 폰트 선언 */
+@font-face {
+  font-family: 'Hanja';
+  src:
+    url('/fonts/hanja.woff2') format('woff2'),
+    url('/fonts/hanja.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -21,7 +31,7 @@
 .navbar-center {
   text-align: center;
   font-size: 1.5rem;
-  font-family: 'TRYGrtsk', sans-serif;
+  font-weight: 500;
 }
 
 /* 오른쪽 토글 버튼 영역 */
@@ -57,6 +67,7 @@
   .navbar-center {
     order: 2;
     font-size: 1.2rem;
+    font-weight: 500;
   }
   .navbar-left {
     order: 1;
@@ -79,6 +90,7 @@
   }
   .navbar-center {
     font-size: 2rem;
+    font-weight: 700;
   }
   .navbar-left{
     font-size: 0.3rem;

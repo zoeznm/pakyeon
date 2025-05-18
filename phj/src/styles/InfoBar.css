@@ -1,0 +1,42 @@
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #000;
+  color: #fff;
+  gap: 3rem;
+}
+.info-col {
+  flex: 1;
+}
+.info-title {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.contents {
+  font-size: 11px;
+}
+.dday {
+  font-size: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .info-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .info-col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-bar {
+    padding: 0.5rem;
+  }
+  .info-title {
+    font-size: 0.6rem;
+  }
+}
