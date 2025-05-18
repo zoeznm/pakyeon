@@ -8,7 +8,7 @@ export default function LoaderScreen() {
 
   useEffect(() => {
     // 0부터 100까지 3초 동안 카운트업
-    const duration = 3; // seconds
+    const duration = 2.5; // seconds
     const steps = 100;
     let start: number | null = null;
 

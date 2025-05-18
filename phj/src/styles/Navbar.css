@@ -1,0 +1,90 @@
+/* Navbar 전체 스타일 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 좌, 중, 우 영역 비율 유지 */
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  flex: 1;
+}
+
+/* 가운데 로고 스타일 */
+.navbar-center {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'TRYGrtsk', sans-serif;
+}
+
+/* 오른쪽 토글 버튼 영역 */
+.navbar-right {
+  text-align: right;
+}
+
+.language-toggle {
+  background: none;
+  border:none;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  color: #000;
+  cursor: pointer;
+}
+
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    flex: none;
+    width: auto;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .navbar-center {
+    order: 2;
+    font-size: 1.2rem;
+  }
+  .navbar-left {
+    order: 1;
+    font-size: 0.9rem;
+  }
+  .navbar-right {
+    order: 3;
+    text-align: right;
+  }
+  .language-toggle {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+ 
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.4rem;
+  }
+  .navbar-center {
+    font-size: 2rem;
+  }
+  .navbar-left{
+    font-size: 0.3rem;
+  }
+  .language-toggle {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
