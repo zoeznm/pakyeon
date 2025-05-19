@@ -162,9 +162,12 @@
     flex: none;
     font-size: 0.7rem;
   }
+  .info-col_2{
+    margin-right: 10px;
+  }
   .info-col_3 {
     position: absolute;
-    right: -90px;
+    right: -80px;
     flex: none;
 
   }
