@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+
 html {
   font-size: 16px;
 }
@@ -20,6 +22,7 @@ body::before {
   will-change: transform;
   z-index: 100;
   pointer-events: none;
+  overflow: hidden;
 }
 
 /* 노이즈를 랜덤하게 흔들리듯 움직이는 키프레임 */
