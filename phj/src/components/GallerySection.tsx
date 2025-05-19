@@ -1,4 +1,4 @@
-// src/components/GallerySection.tsx
+import { Link } from 'react-router-dom';
 import '../styles/GallerySection.css';
 
 import img1 from '../assets/posters/poster_1.jpg';
@@ -13,10 +13,10 @@ export default function GallerySection() {
   return (
     <section className="gallery-section">
       {posters.map((src, idx) => (
-        <div key={idx} className="gallery-item">
+        <Link key={idx} to={`/detail/${idx + 1}`} className="gallery-item">
           <div className="gallery-index">{idx + 1}</div>
           <img src={src} alt={`poster-${idx + 1}`} className="gallery-img" />
-        </div>
+        </Link>
       ))}
     </section>
   );
