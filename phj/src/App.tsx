@@ -16,7 +16,7 @@ export default function App() {
         {/* 메인 갤러리 페이지 */}
         <Route path="/" element={
           <>
-            <Navbar isKorean={false} onToggleLanguage={()=>{}} />
+            <Navbar/>
             <InfoBar />
             <GallerySection />
           </>

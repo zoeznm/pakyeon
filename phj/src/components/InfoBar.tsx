@@ -17,9 +17,9 @@ export default function InfoBar() {
     <div className="info-bar">
       <div className="info-col_1">
         <div className="info-title">(Overview)</div>
-        <div className="contents">An image created with</div>
-        <div className="contents">Carefully selected works</div>
-        <div className="contents">Personal hobby works</div>
+        <div className="contents">開(열 개): 열다</div>
+        <div className="contents">火(불 화): 불</div>
+        <div className="contents">“개화(開火)하다”</div>
       </div>
       <div className="info-col_2">
         <div className="info-title">(Edited)</div>

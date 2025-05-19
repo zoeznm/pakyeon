@@ -19,47 +19,47 @@ export const posterData: PosterItem[] = [
   {
     id: "1",
     img: img1,
-    description: "고요함을 표현한 AI 이미지",
-    tags: ["AI", "Minimal"],   // ← 배열 형태로 초기화
-    genre: "Abstract",
-    date:"2025-05-13",
-    feeling :"angry"
+    description: "화",
+    tags: ["Anger", "DogBarking"],   // ← 배열 형태로 초기화
+    genre: "Horror",
+    date:"2025-05-14",
+    feeling :"Angry"
   },
   {
     id: "2",
     img: img2,
-    description: "반향의 울림을 형상화",
-    tags: ["Sound", "Echo"],
-    genre: "Expressionism",
-    date:"2025-05-13",
-    feeling :"angry"
+    description: "대비",
+    tags: ["contrast", "juxtaposition"],
+    genre: "Abstract Expressionism",
+    date:"2025-05-14",
+    feeling :"tense"
   },
   {
     id: "3",
     img: img3,
-    description: "반향의 울림을 형상화",
-    tags: ["Sound", "Echo"],
-    genre: "Expressionism",
-    date:"2025-05-13",
-    feeling :"angry"
+    description: "욕망",
+    tags: ["desire", "Mercedes-Benz"],
+    genre: "Neo-Expressionism",
+    date:"2025-05-14",
+    feeling :"longing"
   },
   {
     id: "4",
     img: img4,
-    description: "반향의 울림을 형상화",
-    tags: ["Sound", "Echo"],
-    genre: "Expressionism",
-    date:"2025-05-13",
-    feeling :"angry"
+    description: "좆같은 졸준위",
+    tags: ["Fuck", "You"],
+    genre: "ignorant",
+    date:"2025-05-14",
+    feeling :"This fucking sucks"
   },
   {
     id: "5",
     img: img5,
-    description: "반향의 울림을 형상화",
-    tags: ["Sound", "Echo"],
-    genre: "Expressionism",
-    date:"2025-05-13",
-    feeling :"angry"
+    description: "초대",
+    tags: ["invitation", "SHOW"],
+    genre: "Art",
+    date:"2025-06-07",
+    feeling :"THX"
   },
   
 ];

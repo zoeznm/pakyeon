@@ -1,21 +1,18 @@
-import {Link } from 'react-router-dom';
+// src/components/Navbar.tsx
+import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+// 1. 원하는 로고 이미지를 불러옵니다.
+import logo from '../assets/posters/logo.png';
 
-interface NavbarProps {
-  isKorean: boolean;
-  onToggleLanguage: () => void;
-}
-
-export default function Navbar({ isKorean, onToggleLanguage }: NavbarProps) {
+export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">©2025 pakyeon</div>
-      <Link to="/" className="navbar-center">開火</Link>
-      <div className="navbar-right">
-        <button className="language-toggle" onClick={onToggleLanguage}>
-          {isKorean ? 'ENG' : 'KOR'}
-        </button>
-      </div>
+
+      {/* 2. 텍스트 대신 img 태그를 넣습니다. */}
+      <Link to="/" className="navbar-center">
+        <img src={logo} alt="開火 로고" className="navbar-logo" />
+      </Link>
     </nav>
   );
 }

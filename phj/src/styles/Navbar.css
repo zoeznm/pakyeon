@@ -51,7 +51,12 @@
   color: #000;
   cursor: pointer;
 }
-
+.navbar-logo {
+  height: 3rem;        /* 원하는 높이 */
+  width: auto;         /* 비율 유지 */
+  object-fit: contain;
+  margin-left: auto;
+}
 
 /* 모바일 반응형 */
 @media (max-width: 768px) {
@@ -91,12 +96,16 @@
 @media (max-width: 480px) {
   .navbar {
     padding: 0.4rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
   .navbar-left {
     font-size: 0.3rem;
   }
   .navbar-center {
+    margin-left: auto; 
     position: absolute;
+    display: flex; 
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -108,5 +117,11 @@
   .language-toggle {
     font-size: 0.4rem;
     padding: 0.3rem 0.6rem;
+  }
+  .navbar-logo {
+    height: 3rem;        /* 원하는 높이 */
+    width: auto;         /* 비율 유지 */
+    object-fit: contain;
+    margin-left: 200%;
   }
 }

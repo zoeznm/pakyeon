@@ -32,7 +32,7 @@ export default function DetailPage() {
   if (!data) {
     return (
       <>
-        <Navbar isKorean={false} onToggleLanguage={() => {}} />
+        <Navbar/>
         <div className="detail-not-found">
           <p>존재하지 않는 포스터입니다.</p>
           <Link to="/">Back to Home</Link>
@@ -50,7 +50,7 @@ export default function DetailPage() {
 
   return (
     <>
-      <Navbar isKorean={false} onToggleLanguage={() => {}} />
+      <Navbar/>
       <DescBar
         description={data.description}
         tags={data.tags}
