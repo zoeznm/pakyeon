@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import InfoBar from './components/InfoBar';
 // import MainPage from './components/MainPage';
 import LoaderScreen from './components/LoaderScreen';
+import GallerySection from './components/GallerySection';
 
 
 export default function App() {
@@ -11,11 +12,13 @@ export default function App() {
 
   return (
     <><>
+    <LoaderScreen />
       <Navbar isKorean={false} onToggleLanguage={function (): void {
         throw new Error('Function not implemented.');
       } } />
       <InfoBar />
+      <GallerySection />
       {/* <MainPage /> */}
-    </><LoaderScreen /></>
+    </></>
   );
 }

@@ -15,18 +15,18 @@ export default function InfoBar() {
 
   return (
     <div className="info-bar">
-      <div className="info-col">
+      <div className="info-col_1">
         <div className="info-title">(Overview)</div>
-        <div className="contents">An image created with generative AI</div>
+        <div className="contents">An image created with</div>
         <div className="contents">Carefully selected works</div>
         <div className="contents">Personal hobby works</div>
       </div>
-      <div className="info-col">
+      <div className="info-col_2">
         <div className="info-title">(Edited)</div>
         <div className="contents">@hyunjunpark_</div>
         <div className="contents">@matomabo</div>
       </div>
-      <div className="info-col">
+      <div className="info-col_3">
         <div className="info-title">(D-day)</div>
         <div className="dday">D-{days}</div>
       </div>
