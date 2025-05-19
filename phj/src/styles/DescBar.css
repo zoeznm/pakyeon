@@ -6,10 +6,11 @@
   max-width: 800px;
   margin: 2rem auto;
   position: relative;
-
   /* 추가: 전체를 왼쪽 정렬 */
   text-align: left;
   overflow: hidden; 
+  z-index: 1000000;
+  margin-right: 50%;
 }
 
 .desc-row,
@@ -51,10 +52,15 @@
 }
 
 .desc-back a {
-  color: #0af;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
 }
+.wipe-text {
+  /* 애니메이션이 부드럽게 이뤄지도록 will-change 지정 */
+  will-change: clip-path;
+}
+
 @media (max-width: 768px) {
   .desc-bar {
     padding: 1.5rem;
@@ -86,10 +92,10 @@
     text-align: left;
   }
   .desc-label {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   .desc-text {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
   }
   .desc-grid {
     display: grid;
@@ -98,11 +104,11 @@
   .desc-col {
     margin-bottom: 0.8rem;
   }
-  .desc-back a {
+  .desc-back {
     position: absolute;
     left: 4%;
     text-align: left;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: #000;
   }
 }

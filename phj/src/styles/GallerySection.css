@@ -30,6 +30,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  will-change: clip-path;
 }
 
 @media (max-width: 480px) {
