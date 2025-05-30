@@ -9,7 +9,6 @@ https://pakyeon.vercel.app/
 - [핵심 기능](#핵심-기능)
 - [사용 스택](#사용-스택)
 - [설치 및 실행](#설치-및-실행)
-- [폴더 구조](#폴더-구조)
 - [배포](#배포)
 - [라이선스](#라이선스)
 
@@ -36,7 +35,7 @@ https://pakyeon.vercel.app/
 
 ```bash
 # 1. 레포 클론
-git clone https://github.com/your-username/your-repo.git
+https://github.com/zoeznm/pakyeon.git
 cd phj
 
 # 2. 의존성 설치
